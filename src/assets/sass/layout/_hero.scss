@@ -1,0 +1,19 @@
+.hero {
+  height: 60vh;
+  background-color: #aaaaaa;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  color: #ffffff;
+
+  h1 {
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+  }
+}
