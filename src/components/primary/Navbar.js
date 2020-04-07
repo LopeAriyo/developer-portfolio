@@ -4,7 +4,14 @@ import { Link } from "gatsby"
 const navbar = props => (
   <nav className="main-navigation">
     <div className="logo">
-      <Link to="/#">Logo</Link>
+      <div className="logo-img">
+        <Link to="/#">
+          <img src="../../assets/images/gatsby-icon.png" />
+        </Link>
+      </div>
+      <div className="logo-text">
+        <Link to="/#">Lope Ariyo</Link>
+      </div>
     </div>
 
     <div className="spacer"></div>

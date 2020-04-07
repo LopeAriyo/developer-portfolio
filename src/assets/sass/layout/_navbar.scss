@@ -7,13 +7,13 @@
 
   .logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 150px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     a {
       text-decoration: none;
-      color: inherit;
+      color: rgb(236, 82, 129);
       text-transform: uppercase;
     }
   }
@@ -29,12 +29,15 @@
 
     .nav-link {
       a {
+        text-decoration: none;
         margin: 0.2rem;
         padding: 1rem 0.5rem;
+        color: rgb(67, 17, 120);
+        text-transform: uppercase;
       }
 
       a:hover {
-        color: #0463a6;
+        color: rgb(236, 82, 129);
         background: rgba(255, 255, 255, 0.2);
         text-decoration: none;
       }
@@ -43,6 +46,11 @@
   @media (max-width: 768px) {
     .nav-links {
       display: none;
+    }
+    .logo {
+      .logo-text {
+        display: none;
+      }
     }
   }
 

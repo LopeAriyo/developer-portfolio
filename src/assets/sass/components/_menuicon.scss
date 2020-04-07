@@ -15,11 +15,15 @@
   &__line {
     display: block;
     position: relative;
-    background: black;
+    background: rgb(67, 17, 120);
     width: 36px;
     height: 3px;
     border-radius: 2px;
-    transition: background 0.8s ease;
+    // transition: background 0.2s ease-in;
+
+    &:hover {
+      background: rgb(236, 82, 129);
+    }
 
     &::before,
     &::after {
@@ -28,13 +32,14 @@
       background: inherit;
       height: 100%;
       border-radius: 2px;
-      transition: background 0.8s ease;
+      //   transition: background 0.2s ease-in;
     }
 
     &::before {
       transform: translateY(-8px);
       width: 100%;
     }
+
     &::after {
       transform: translateY(8px);
       width: 100%;
