@@ -2,16 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 
 const navbar = props => (
-  <nav>
+  <nav className="main-navigation">
     <div className="logo">
       <Link to="/#">Logo</Link>
     </div>
-    <input type="checkbox" className="menu-btn" id="menu-btn" />
-    <label htmlFor="menu-btn" className="menu-icon">
-      <span className="menu-icon__line"></span>
-    </label>
 
-    <div className="navigation">
+    <div className="spacer"></div>
+
+    <div>
       <ul className="nav-links">
         <li className="nav-link">
           <Link to="/#">Link 1 </Link>
@@ -27,8 +25,9 @@ const navbar = props => (
         </li>
       </ul>
     </div>
-    <div className="hamburger">
-      {/* <HamburgerIcon handleClick={props.handleHamburgerClick} /> */}
+
+    <div className="menu-icon">
+      <span className="menu-icon__line"></span>
     </div>
   </nav>
 )

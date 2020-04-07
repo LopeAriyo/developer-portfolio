@@ -1,13 +1,13 @@
 //Libraries
-@import "libs/vars";
-@import "libs/breakpoints";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
 // Layout.
 @import "layout/header";
+@import "layout/navbar";
+// @import "layout/sidenavbar";
 
-//Elements.
-@import "layout/hero";
+//Components.
+@import "components/menuicon";
 
 * {
   box-sizing: border-box;
