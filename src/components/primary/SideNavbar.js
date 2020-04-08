@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 const sideNavbar = props => {
   let navClassName = "side-navigation"
 
-  if (props.visible) {
+  if (props.sideNavBarVisible) {
     navClassName = "side-navigation open"
   }
   return (
     <nav className={navClassName}>
-      <div className="cross-icon">
+      <div className="cross-icon" onClick={props.handleSideNavBarClose}>
         <span className="cross-icon__line"></span>
       </div>
       <div className="logo">

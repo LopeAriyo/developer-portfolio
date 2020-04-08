@@ -33,7 +33,7 @@ const navbar = props => (
       </ul>
     </div>
 
-    <div className="menu-icon">
+    <div className="menu-icon" onClick={props.handleSideNavBarOpen}>
       <span className="menu-icon__line"></span>
     </div>
   </nav>
