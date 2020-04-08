@@ -1,8 +1,117 @@
+@function multiple-box-shadow($n) {
+  $value: "#{random(2000)}px #{random(2000)}px rgb(93,206,193)";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px rgb(93,206,193)";
+  }
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(200);
+$shadows-medium: multiple-box-shadow(100);
+$shadows-big: multiple-box-shadow(50);
+
 .banner {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 10px;
-  margin-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(252, 243, 242);
+  align-items: center;
+  justify-content: space-around;
+  // radial-gradient(
+  //   ellipse at bottom,
+  //   rgb(228, 217, 240) 0%,
+  //   rgb(238, 231, 245) 100%
+  // );
+  overflow: hidden;
+
+  #small-circles {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 60s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+
+  #medium-circles {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 120s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+
+  #large-circles {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 180s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+
+  .intro {
+    position: absolute;
+    top: 40%;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(3, 14, 39);
+    text-align: center;
+    align-self: center;
+
+    .greeting {
+      font-size: 0.8rem;
+      color: rgb(238, 113, 108);
+      letter-spacing: 5px;
+    }
+    font-weight: 300;
+    .name {
+      font-size: 3rem;
+    }
+
+    .title {
+    }
+  }
 }

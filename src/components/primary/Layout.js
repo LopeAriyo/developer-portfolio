@@ -27,8 +27,9 @@ class Layout extends Component {
           sideNavBarVisible={this.state.sideNavigationVisible}
           handleSideNavBarClick={this.handleSideNavigationToggle}
         />
-        <div className="wrapper">{this.props.children}</div>
         <Banner />
+        {/* <div className="wrapper">{this.props.children}</div> */}
+
         {/* <Footer /> */}
       </React.Fragment>
     )

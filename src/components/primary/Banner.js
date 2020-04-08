@@ -4,13 +4,20 @@ import SocialMediaBar from "../secondary/SocialMediaBar"
 
 const Banner = props => (
   <div className="banner">
-    <BannerImage />
-    <div className="name">Lope Ariyo</div>
-    <SocialMediaBar iconSize={"60px"} />
-    <div>
-      Hi, I'm a full stack developer with a passion for UI and design. Welcome
-      to my portfolio.{" "}
+    <div id="small-circles"></div>
+    <div id="medium-circles"></div>
+    <div id="large-circles"></div>
+    <div className="intro">
+      <p className="greeting">Hello. Bonjour. 안녕하세요.</p>
+      <p className="name">Lope Ariyo</p>
+      <p id="title">Fullstack Developer </p>
+      <br />
+      {/* <p>I love UI and design.</p> */}
+
+      <p> Welcome to my portfolio! </p>
+      {/* <SocialMediaBar iconSize={"60px"} /> */}
     </div>
+    {/* <BannerImage /> */}
   </div>
 )
 
