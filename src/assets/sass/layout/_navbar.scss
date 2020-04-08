@@ -1,7 +1,7 @@
 .main-navigation {
   display: flex;
-  flex-direction: row;
   height: 100%;
+  flex-direction: row;
   align-items: center;
   padding: 0 1rem;
 
@@ -33,7 +33,6 @@
         margin: 0.2rem;
         padding: 1rem 0.5rem;
         color: rgb(67, 17, 120);
-        text-transform: uppercase;
       }
 
       a:hover {

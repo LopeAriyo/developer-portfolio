@@ -6,4 +6,10 @@
   height: 80px;
   background-color: rgb(238, 231, 245);
   z-index: 50;
+
+  @media (min-width: 769px) {
+    .side-navigation {
+      display: none;
+    }
+  }
 }
