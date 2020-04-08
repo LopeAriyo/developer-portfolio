@@ -7,6 +7,7 @@ import React, { Component } from "react"
 import "../../assets/sass/main.scss"
 
 import Header from "./Header"
+import Banner from "./Banner"
 // import Footer from "./Footer"
 
 class Layout extends Component {
@@ -27,6 +28,7 @@ class Layout extends Component {
           handleSideNavBarClick={this.handleSideNavigationToggle}
         />
         <div className="wrapper">{this.props.children}</div>
+        <Banner />
         {/* <Footer /> */}
       </React.Fragment>
     )

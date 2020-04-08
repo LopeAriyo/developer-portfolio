@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import LopeIcon from "../../assets/images/lope-icon-white.svg"
 
 const sideNavbar = props => {
   let navClassName = "side-navigation"
@@ -15,7 +16,11 @@ const sideNavbar = props => {
       <div className="logo">
         <div className="logo-img">
           <Link to="/#">
-            <img src="../../assets/images/gatsby-icon.png" />
+            <LopeIcon
+              height={"60px"}
+              width={"70px"}
+              fill={"rgb(236, 82, 129)"}
+            />
           </Link>
         </div>
       </div>

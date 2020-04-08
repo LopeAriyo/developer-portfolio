@@ -8,9 +8,10 @@
   .logo {
     display: flex;
     flex-direction: row;
-    width: 150px;
+    width: 200px;
     align-items: center;
     justify-content: space-evenly;
+
     a {
       text-decoration: none;
       color: rgb(236, 82, 129);
@@ -47,6 +48,7 @@
       display: none;
     }
     .logo {
+      width: 70px;
       .logo-text {
         display: none;
       }

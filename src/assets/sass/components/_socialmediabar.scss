@@ -1,0 +1,10 @@
+.social-media-bar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    
+    .social-media-icon {
+        flex-direction: column;
+    }
+}
