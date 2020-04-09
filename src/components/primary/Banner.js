@@ -12,7 +12,10 @@ const Banner = props => (
       <p className="greeting">Hello. Bonjour. 안녕하세요.</p>
       <p className="name">Lope Ariyo</p>
       <p className="title">Fullstack Developer </p>
-      <SocialMediaBar iconSize={"60px"} />
+      <div className="social-media">
+        <SocialMediaBar />
+      </div>
+
       <br />
       <p> Welcome to my portfolio! </p>
       {/* <p>I love UI and design.</p>  This bit will type*/}

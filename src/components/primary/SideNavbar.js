@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import LopeIcon from "../../assets/images/lope-icon-white.svg"
 
+import SocialMediaBar from "../secondary/SocialMediaBar"
+
 const sideNavbar = props => {
   let navClassName = "side-navigation"
 
@@ -42,7 +44,7 @@ const sideNavbar = props => {
       </div>
       <div className="spacer"></div>
       <div className="social-media">
-        This is where social media icons will go
+        <SocialMediaBar />
       </div>
     </nav>
   )
