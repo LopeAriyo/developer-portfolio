@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(67, 17, 120);
+  background-color: rgb(93, 206, 193);
   z-index: 200;
   transition: all 1.2s ease-out;
 
@@ -50,7 +50,7 @@
 
     &:hover,
     &:active {
-      color: rgb(236, 82, 129);
+      color: rgb(240, 136, 134);
       text-decoration: none;
     }
   }
@@ -98,7 +98,7 @@
 
       &:hover:after {
         width: 100%;
-        background: rgb(236, 82, 129);
+        background: rgb(238, 113, 108);
       }
 
       transition: all 0.5s;

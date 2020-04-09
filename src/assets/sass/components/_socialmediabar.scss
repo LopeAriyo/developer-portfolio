@@ -1,10 +1,32 @@
-.social-media-bar{
+.social-media-bar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  //   height: 100%;
+  padding: 10px 0px;
+  margin: 0px;
+  text-align: center;
+  color: rgb(238, 113, 108);
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6rem;
+  font-weight: 100;
+
+  .social-media-icons {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 80%;
-    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
     .social-media-icon {
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        margin: 0.2rem;
+        padding: 1rem 0.5rem;
+        color: rgb(240, 136, 134);
+      }
     }
+  }
 }

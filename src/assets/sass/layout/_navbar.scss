@@ -8,14 +8,16 @@
   .logo {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 300px;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Abril Fatface", cursive;
+    letter-spacing: 5px;
 
     a {
       text-decoration: none;
       color: rgb(3, 14, 39);
-      text-transform: uppercase;
+      font-size: 1.5rem;
     }
   }
   .spacer {

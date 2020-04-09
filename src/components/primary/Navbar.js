@@ -25,16 +25,16 @@ const navbar = props => {
       <div>
         <ul className="nav-links">
           <li className="nav-link">
-            <Link to="/#">Link 1 </Link>
+            <Link to="/#about">About </Link>
           </li>
           <li className="nav-link">
-            <Link to="/#">Link 2 </Link>
+            <Link to="/#projects">Projects </Link>
           </li>
           <li className="nav-link">
-            <Link to="/#">Link 3</Link>
+            <Link to="/#blog">Blog</Link>
           </li>
           <li className="nav-link">
-            <Link to="/#">Link 4 </Link>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
       </div>

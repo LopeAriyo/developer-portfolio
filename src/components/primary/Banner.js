@@ -7,17 +7,16 @@ const Banner = props => (
     <div id="small-circles"></div>
     <div id="medium-circles"></div>
     <div id="large-circles"></div>
+    {/* <BannerImage /> */}
     <div className="intro">
       <p className="greeting">Hello. Bonjour. 안녕하세요.</p>
       <p className="name">Lope Ariyo</p>
-      <p id="title">Fullstack Developer </p>
+      <p className="title">Fullstack Developer </p>
+      <SocialMediaBar iconSize={"60px"} />
       <br />
-      {/* <p>I love UI and design.</p> */}
-
       <p> Welcome to my portfolio! </p>
-      {/* <SocialMediaBar iconSize={"60px"} /> */}
+      {/* <p>I love UI and design.</p>  This bit will type*/}
     </div>
-    {/* <BannerImage /> */}
   </div>
 )
 
