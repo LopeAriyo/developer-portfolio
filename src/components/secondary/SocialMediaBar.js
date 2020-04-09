@@ -9,28 +9,29 @@ const BannerImage = props => (
   <div className="social-media-bar">
     <ul className="social-media-icons">
       <li className="social-media-icon">
-        <Link to="/#">
-          <GithubIcon height={"60px"} width={"60px"} />
-          <p>LinkedIn</p>
-        </Link>
-      </li>
-      <li className="social-media-icon">
-        <Link to="/#">
+        <a href="https://www.linkedin.com/in/lopeariyo" target="_blank">
           <LinkedInIcon height={"60px"} width={"60px"} />
-          <p>Github</p>
-        </Link>
+
+          <p>LinkedIn</p>
+        </a>
       </li>
       <li className="social-media-icon">
-        <Link to="/#">
+        <a href="https://github.com/LopeAriyo" target="_blank">
+          <GithubIcon height={"60px"} width={"60px"} />
+          <p>Github</p>
+        </a>
+      </li>
+      <li className="social-media-icon">
+        <a href="https://medium.com/@lope.ariyo" target="_blank">
           <MediumIcon height={"60px"} width={"60px"} />
           <p>Medium</p>
-        </Link>
+        </a>
       </li>
       <li className="social-media-icon">
-        <Link to="/#">
+        <a href="https://twitter.com/lopeariyo" target="_blank">
           <TwitterIcon height={"60px"} width={"60px"} />
           <p>Twitter</p>
-        </Link>
+        </a>
       </li>
     </ul>
   </div>

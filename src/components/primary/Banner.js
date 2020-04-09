@@ -11,6 +11,7 @@ const Banner = props => (
     {/* <BannerImage /> */}
     <div className="intro">
       <p className="greeting">Hello. Bonjour. 안녕하세요.</p>
+      <br />
       <p className="name">Lope Ariyo</p>
       <p className="title">Fullstack Developer </p>
       <div className="social-media">
