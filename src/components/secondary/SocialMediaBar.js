@@ -16,19 +16,19 @@ const BannerImage = props => (
       </li>
       <li className="social-media-icon">
         <Link to="/#">
-          <GithubIcon height={"60px"} width={"60px"} />
+          <LinkedInIcon height={"60px"} width={"60px"} />
           <p>Github</p>
         </Link>
       </li>
       <li className="social-media-icon">
         <Link to="/#">
-          <GithubIcon height={"60px"} width={"60px"} />
+          <MediumIcon height={"60px"} width={"60px"} />
           <p>Medium</p>
         </Link>
       </li>
       <li className="social-media-icon">
         <Link to="/#">
-          <GithubIcon height={"60px"} width={"60px"} />
+          <TwitterIcon height={"60px"} width={"60px"} />
           <p>Twitter</p>
         </Link>
       </li>
