@@ -22,7 +22,7 @@ const navbar = props => {
 
       <div className="spacer"></div>
 
-      <div>
+      {/* <div>
         <ul className="nav-links">
           <li className="nav-link">
             <Link to="/#about">About </Link>
@@ -41,7 +41,7 @@ const navbar = props => {
 
       <div className="menu-icon" onClick={props.handleSideNavBarOpen}>
         <span className="menu-icon__line"></span>
-      </div>
+      </div> */}
     </nav>
   )
 }
