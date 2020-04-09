@@ -7,6 +7,7 @@ const Banner = props => (
     <div id="small-circles"></div>
     <div id="medium-circles"></div>
     <div id="large-circles"></div>
+    <div id="extra-large-circles"></div>
     {/* <BannerImage /> */}
     <div className="intro">
       <p className="greeting">Hello. Bonjour. 안녕하세요.</p>

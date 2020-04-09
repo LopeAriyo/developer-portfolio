@@ -6,9 +6,10 @@
   @return unquote($value);
 }
 
-$shadows-small: multiple-box-shadow(200);
-$shadows-medium: multiple-box-shadow(100);
-$shadows-big: multiple-box-shadow(50);
+$shadows-small: multiple-box-shadow(400);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-large: multiple-box-shadow(100);
+$shadows-extra-large: multiple-box-shadow(50);
 
 .banner {
   position: relative;
@@ -17,73 +18,114 @@ $shadows-big: multiple-box-shadow(50);
   width: 100vw;
   height: 100vh;
   background: rgb(252, 243, 242);
-  align-items: center;
-  justify-content: space-around;
-  // radial-gradient(
-  //   ellipse at bottom,
-  //   rgb(228, 217, 240) 0%,
-  //   rgb(238, 231, 245) 100%
-  // );
   overflow: hidden;
 
   #small-circles {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background: transparent;
     box-shadow: $shadows-small;
-    animation: animStar 60s linear infinite;
+    z-index: 4;
+    animation: animCircleLeft 180s linear infinite;
 
     &:after {
       content: " ";
       position: absolute;
-      top: 2000px;
+      left: 600px;
       width: 1px;
       height: 1px;
+      border-radius: 50%;
       background: transparent;
       box-shadow: $shadows-small;
+      z-index: 2;
     }
   }
 
   #medium-circles {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: transparent;
     box-shadow: $shadows-medium;
-    animation: animStar 120s linear infinite;
+    animation: animCircleUp 180s linear infinite;
+    z-index: 2;
 
     &:after {
       content: " ";
       position: absolute;
-      top: 2000px;
+      top: 300px;
       width: 2px;
       height: 2px;
+      border-radius: 50%;
       background: transparent;
       box-shadow: $shadows-medium;
+      z-index: 4;
     }
   }
 
   #large-circles {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: transparent;
-    box-shadow: $shadows-big;
-    animation: animStar 180s linear infinite;
+    box-shadow: $shadows-large;
+    animation: animCircleRight 90s linear infinite;
+    z-index: 2;
 
     &:after {
       content: " ";
       position: absolute;
-      top: 2000px;
-      width: 3px;
-      height: 3px;
+      right: 300px;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
       background: transparent;
-      box-shadow: $shadows-big;
+      box-shadow: $shadows-large;
+      z-index: 4;
+    }
+  }
+  #extra-large-circles {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-extra-large;
+    animation: animCircleDown 90s linear infinite;
+    z-index: 4;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 600px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      z-index: 2;
+      background: transparent;
+      box-shadow: $shadows-extra-large;
     }
   }
 
-  @keyframes animStar {
+  @keyframes animCircleLeft {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-2000px);
+    }
+  }
+
+  @keyframes animCircleRight {
+    from {
+      transform: translateX(-2000px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes animCircleUp {
     from {
       transform: translateY(0px);
     }
@@ -92,14 +134,23 @@ $shadows-big: multiple-box-shadow(50);
     }
   }
 
+  @keyframes animCircleDown {
+    from {
+      transform: translateY(-2000px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+
   .intro {
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 35%;
     width: inherit;
     padding: 0px 1rem;
     color: rgb(3, 14, 39);
     text-align: center;
+    z-index: 3;
 
     .greeting {
       font-size: 0.9rem;
