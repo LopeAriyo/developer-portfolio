@@ -145,7 +145,7 @@ $shadows-extra-large: multiple-box-shadow(50);
 
   .intro {
     position: absolute;
-    top: 15%;
+    top: 25%;
     width: inherit;
     padding: 0px 1rem;
     color: rgb(3, 14, 39);
@@ -186,6 +186,10 @@ $shadows-extra-large: multiple-box-shadow(50);
 
     .social-media {
       color: rgb(240, 136, 134);
+    }
+
+    @media (min-width: 769px) {
+      top: 15%;
     }
   }
 }
