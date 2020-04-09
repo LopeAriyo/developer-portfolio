@@ -158,18 +158,30 @@ $shadows-extra-large: multiple-box-shadow(50);
       letter-spacing: 5px;
       font-weight: 300;
       font-family: "Abril Fatface", cursive;
+      @media (min-width: 415px) {
+        font-size: 1.8rem;
+      }
     }
     .name {
       font-size: 2.7rem;
       font-weight: 900;
       letter-spacing: 5px;
       font-family: "Abril Fatface", cursive;
+      @media (min-width: 415px) {
+        font-size: 5.4rem;
+      }
+      @media (min-width: 769px) {
+        font-size: 8.1rem;
+      }
     }
 
     .title {
       font-size: 1.8rem;
       font-weight: 600;
       font-family: "Abril Fatface", cursive;
+      @media (min-width: 415px) {
+        font-size: 2.7rem;
+      }
     }
 
     .social-media {
