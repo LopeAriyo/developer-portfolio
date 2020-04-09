@@ -84,7 +84,7 @@
         font-weight: 400;
         letter-spacing: 0.05em;
         position: relative;
-
+        transition: all 0.5s;
         &:after {
           position: absolute;
           bottom: 0;
@@ -102,8 +102,6 @@
           width: 100%;
           background: rgb(238, 113, 108);
         }
-
-        transition: all 0.5s;
 
         &:after,
         &:before {

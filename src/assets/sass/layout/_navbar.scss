@@ -33,15 +33,39 @@
     .nav-link {
       a {
         text-decoration: none;
+        letter-spacing: 0.15em;
         margin: 0.2rem;
-        padding: 1rem 0.5rem;
+        padding: 1rem 0.5rem 0.4rem 0.5rem;
         color: rgb(3, 14, 39);
-      }
+        transition: all 0.5s;
+        position: relative;
 
-      a:hover {
-        color: rgb(238, 113, 108);
-        background: rgba(255, 255, 255, 0.2);
-        text-decoration: none;
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: ".";
+          color: transparent;
+          background: rgb(238, 113, 108);
+          height: 2px;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+        &:after,
+        &:before {
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          color: rgb(238, 113, 108);
+          width: 100%;
+          // text-decoration: none;
+        }
       }
     }
   }
