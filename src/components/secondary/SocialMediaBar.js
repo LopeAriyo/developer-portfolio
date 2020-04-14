@@ -28,7 +28,7 @@ const BannerImage = props => (
         </a>
       </li>
       <li className="social-media-icon">
-        <a href="https://twitter.com/lopeariyo" target="_blank">
+        <a href="https://twitter.com/lopeariyodev" target="_blank">
           <TwitterIcon height={"60px"} width={"60px"} />
           <p>Twitter</p>
         </a>

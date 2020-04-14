@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import LopeIcon from "../../assets/images/lope-icon-2.svg"
+import LopeIcon from "../../assets/images/lope-icon-1.svg"
 
 const navbar = props => {
   return (
