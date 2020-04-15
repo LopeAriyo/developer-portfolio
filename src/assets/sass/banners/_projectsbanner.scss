@@ -1,3 +1,7 @@
+$phoneradius: 300px;
+$tabletradius: 450px;
+$desktopradius: 600px;
+
 .projects-banner {
   position: relative;
   display: flex;
@@ -5,7 +9,241 @@
   width: 100vw;
   height: 100vh;
   background: #f0716c;
-  //   overflow: scroll;
+  overflow: hidden;
+
+  .blob {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    filter: url("#filter");
+    // overflow: hidden;
+  }
+
+  .ball {
+    width: $phoneradius;
+    height: $phoneradius;
+    position: absolute;
+    top: calc(30% - #{$phoneradius/2});
+    left: calc(60% - #{$phoneradius/6});
+
+    @media (min-width: 415px) {
+      width: $tabletradius;
+      height: $tabletradius;
+      top: calc(30% - #{$tabletradius/2});
+      left: calc(50% - #{$tabletradius/5});
+    }
+
+    @media (min-width: 769px) {
+      width: $desktopradius;
+      height: $desktopradius;
+      top: calc(30% - #{$desktopradius/3});
+      left: calc(40% - #{$tabletradius/4});
+    }
+
+    &:before {
+      background: #87d4cd;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+    }
+
+    &:nth-child(1) {
+      transform: translate(-$phoneradius * 0.6);
+      animation: x-axis-lateral-1 4s infinite alternate ease-in-out;
+
+      @media (min-width: 415px) {
+        transform: translate(-$tabletradius * 0.6);
+        animation: x-axis-lateral-2 6s infinite alternate ease-in-out;
+      }
+
+      @media (min-width: 769px) {
+        transform: translate(-$desktopradius * 0.6);
+        animation: x-axis-lateral-3 8s infinite alternate ease-in-out;
+      }
+
+      &:before {
+        animation: y-axis-lateral-1 4s infinite 0.1s alternate ease-in-out;
+        @media (min-width: 415px) {
+          animation: y-axis-lateral-2 6s infinite 0.1s alternate ease-in-out;
+        }
+
+        @media (min-width: 769px) {
+          animation: y-axis-lateral-3 8s infinite 0.1s alternate ease-in-out;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      animation: x-axis-1 4s infinite alternate ease-in-out;
+
+      @media (min-width: 415px) {
+        animation: x-axis-2 6s infinite alternate ease-in-out;
+      }
+
+      @media (min-width: 769px) {
+        animation: x-axis-3 8s infinite alternate ease-in-out;
+      }
+
+      &:before {
+        animation: y-axis-1 4s infinite 0.5s alternate ease-in-out;
+
+        @media (min-width: 415px) {
+          animation: y-axis-2 6s infinite 0.5s alternate ease-in-out;
+        }
+
+        @media (min-width: 769px) {
+          animation: y-axis-3 8s infinite 0.5s alternate ease-in-out;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      transform: translate(-$phoneradius * 0.5, $phoneradius * 0.1);
+      animation: x-axis-lateral-1 4s infinite alternate ease;
+
+      @media (min-width: 415px) {
+        transform: translate(-$tabletradius * 0.8, $tabletradius * 0.8);
+        animation: x-axis-lateral-2 6s infinite alternate ease;
+      }
+
+      @media (min-width: 769px) {
+        transform: translate(-$desktopradius * 1.5, $desktopradius * 0.3);
+        animation: x-axis-lateral-3 8s infinite alternate ease;
+      }
+
+      &:before {
+        animation: y-axis-lateral-1 4s infinite 0.5s alternate ease-in-out;
+
+        @media (min-width: 415px) {
+          animation: y-axis-lateral-2 6s infinite 0.5s alternate ease-in-out;
+        }
+
+        @media (min-width: 769px) {
+          animation: y-axis-lateral-3 8s infinite 0.5s alternate ease-in-out;
+        }
+      }
+    }
+  }
+
+  @keyframes x-axis-1 {
+    0% {
+      transform: translate(-$phoneradius * 0.8);
+    }
+    100% {
+      transform: translate($phoneradius * 0.2);
+    }
+  }
+
+  @keyframes x-axis-2 {
+    0% {
+      transform: translate(-$tabletradius * 0.4);
+    }
+    100% {
+      transform: translate($tabletradius * 0.4);
+    }
+  }
+
+  @keyframes x-axis-3 {
+    0% {
+      transform: translate(-$desktopradius * 0.2);
+    }
+    100% {
+      transform: translate($desktopradius * 0.8);
+    }
+  }
+
+  @keyframes y-axis-1 {
+    0% {
+      transform: translateY($phoneradius * 0.2);
+    }
+    100% {
+      transform: translateY(-$phoneradius * 0.8) scale(0.8);
+      background: #87d4cd;
+    }
+  }
+
+  @keyframes y-axis-2 {
+    0% {
+      transform: translateY($tabletradius * 0.2);
+    }
+    100% {
+      transform: translateY(-$tabletradius * 0.4) scale(1);
+      background: #87d4cd;
+    }
+  }
+
+  @keyframes y-axis-3 {
+    0% {
+      transform: translateY($desktopradius * 0.2);
+    }
+    100% {
+      transform: translateY(-$desktopradius * 0.2) scale(1.2);
+      background: #87d4cd;
+    }
+  }
+
+  @keyframes x-axis-lateral-1 {
+    0% {
+      transform: translate(-$phoneradius * 0.3);
+    }
+    100% {
+      transform: translate($phoneradius * 0.2);
+    }
+  }
+
+  @keyframes x-axis-lateral-2 {
+    0% {
+      transform: translate(-$tabletradius * 0.2);
+    }
+    100% {
+      transform: translate($tabletradius * 0.4);
+    }
+  }
+
+  @keyframes x-axis-lateral-3 {
+    0% {
+      transform: translate(-$desktopradius * 0.1);
+    }
+    100% {
+      transform: translate($desktopradius * 0.2);
+    }
+  }
+
+  @keyframes y-axis-lateral-1 {
+    0% {
+      transform: translateY($phoneradius/5);
+    }
+    100% {
+      transform: translateY(-$phoneradius);
+      background: #87d4cd;
+    }
+  }
+
+  @keyframes y-axis-lateral-2 {
+    0% {
+      transform: translateY($tabletradius/5);
+    }
+    100% {
+      transform: translateY(-$tabletradius);
+      background: #87d4cd;
+    }
+  }
+
+  @keyframes y-axis-lateral-3 {
+    0% {
+      transform: translateY($desktopradius/5);
+    }
+    100% {
+      transform: translateY(-$desktopradius);
+      background: #87d4cd;
+    }
+  }
 
   .section {
     position: absolute;
