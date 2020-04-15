@@ -1,13 +1,10 @@
 import React, { Component } from "react"
-
 // import PropTypes from "prop-types"
-// import Helmet from "react-helmet"
 // import { StaticQuery, graphql } from "gatsby"
 
 import "../../assets/sass/main.scss"
 
 import Header from "./Header"
-import Banner from "./Banner"
 // import Footer from "./Footer"
 
 class Layout extends Component {
@@ -27,9 +24,7 @@ class Layout extends Component {
           sideNavBarVisible={this.state.sideNavigationVisible}
           handleSideNavBarClick={this.handleSideNavigationToggle}
         />
-        <Banner />
-        {/* <div className="wrapper">{this.props.children}</div> */}
-
+        <div className="wrapper">{this.props.children}</div>
         {/* <Footer /> */}
       </React.Fragment>
     )

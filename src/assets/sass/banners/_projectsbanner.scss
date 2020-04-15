@@ -1,0 +1,64 @@
+.projects-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #f0716c;
+  //   overflow: scroll;
+
+  .section {
+    position: absolute;
+    top: 60%;
+    width: inherit;
+    padding: 0px 1.2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 3;
+
+    .title {
+      font-size: 2.7rem;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 3rem;
+      letter-spacing: 2px;
+      font-family: "Abril Fatface", cursive;
+      color: rgb(3, 14, 39);
+      text-align: left;
+      @media (min-width: 415px) {
+        font-size: 5.4rem;
+        line-height: 6rem;
+      }
+      @media (min-width: 769px) {
+        font-size: 8.1rem;
+        line-height: 10rem;
+      }
+    }
+
+    .info {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-left: 4.5rem;
+      padding: 10px 0;
+      text-align: justify;
+      line-height: 1rem;
+
+      @media (min-width: 415px) {
+        font-size: 1.2rem;
+        margin-left: 10rem;
+        letter-spacing: 2px;
+        line-height: 1.7rem;
+      }
+    }
+
+    @media (min-width: 415px) {
+      padding: 0px 3rem;
+      top: 55%;
+    }
+
+    @media (min-width: 769px) {
+      padding: 0px 6rem;
+      top: 35%;
+    }
+  }
+}

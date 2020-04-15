@@ -1,14 +1,12 @@
 import React from "react"
-import BannerImage from "../secondary/BannerImage"
 import SocialMediaBar from "../secondary/SocialMediaBar"
 
-const Banner = props => (
-  <div className="banner">
+const Landing = props => (
+  <div className="landing">
     <div id="small-circles"></div>
     <div id="medium-circles"></div>
     <div id="large-circles"></div>
     <div id="extra-large-circles"></div>
-    {/* <BannerImage /> */}
     <div className="intro">
       <p className="greeting">Hello. Kilonshele. 안녕하세요.</p>
       <br />
@@ -20,9 +18,8 @@ const Banner = props => (
 
       <br />
       <p> Welcome to my portfolio! </p>
-      {/* <p>I love UI and design.</p>  This bit will type*/}
     </div>
   </div>
 )
 
-export default Banner
+export default Landing

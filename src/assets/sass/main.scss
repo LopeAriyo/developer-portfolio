@@ -5,10 +5,14 @@
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/sidenavbar";
-@import "layout/banner";
+
+//Banners
+@import "layout/landing";
+@import "banners/projectsbanner";
 
 //Components
 @import "components/socialmediabar";
+@import "components/button";
 
 //Icons
 @import "components/menuicon";
@@ -24,6 +28,10 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {

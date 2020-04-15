@@ -1,22 +1,25 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/primary/Layout"
+import Landing from "../components/banners/Landing"
+import ProjectsBanner from "../components/banners/ProjectsBanner"
 
 const IndexPage = () => (
   <div className="application">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Lope Ariyo</title>
+      <title>Lopè Ariyo - Fullstack Developer</title>
       {/* <link rel="canonical" href="http://mysite.com/example" /> */}
     </Helmet>
 
     <Layout>
-      {/* <div id="wrapper">
-      <Introduction />
-      <Features />
-      <Capabilities />
-      <Contact />
-    </div>*/}
+      <Landing />
+      {/* <div id="wrapper"> */}
+      {/* <AboutBanner /> */}
+      <ProjectsBanner />
+      {/* <BlogBanner/> */}
+      {/* <Contact /> */}
+      {/* </div>*/}
     </Layout>
   </div>
 )
