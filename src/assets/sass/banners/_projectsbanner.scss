@@ -2,14 +2,8 @@ $phoneradius: 300px;
 $tabletradius: 450px;
 $desktopradius: 600px;
 
-.projects-banner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+#projects-banner {
   background: #f0716c;
-  overflow: hidden;
 
   .blob {
     position: absolute;
@@ -59,22 +53,22 @@ $desktopradius: 600px;
 
       @media (min-width: 415px) {
         transform: translate(-$tabletradius * 0.6);
-        animation: x-axis-lateral-2 6s infinite alternate ease-in-out;
+        animation: x-axis-lateral-2 4s infinite alternate ease-in-out;
       }
 
       @media (min-width: 769px) {
         transform: translate(-$desktopradius * 0.6);
-        animation: x-axis-lateral-3 8s infinite alternate ease-in-out;
+        animation: x-axis-lateral-3 4s infinite alternate ease-in-out;
       }
 
       &:before {
         animation: y-axis-lateral-1 4s infinite 0.1s alternate ease-in-out;
         @media (min-width: 415px) {
-          animation: y-axis-lateral-2 6s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-lateral-2 4s infinite 0.1s alternate ease-in-out;
         }
 
         @media (min-width: 769px) {
-          animation: y-axis-lateral-3 8s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-lateral-3 4s infinite 0.1s alternate ease-in-out;
         }
       }
     }
@@ -83,49 +77,49 @@ $desktopradius: 600px;
       animation: x-axis-1 4s infinite alternate ease-in-out;
 
       @media (min-width: 415px) {
-        animation: x-axis-2 6s infinite alternate ease-in-out;
+        animation: x-axis-2 4s infinite alternate ease-in-out;
       }
 
       @media (min-width: 769px) {
-        animation: x-axis-3 8s infinite alternate ease-in-out;
+        animation: x-axis-3 4s infinite alternate ease-in-out;
       }
 
       &:before {
         animation: y-axis-1 4s infinite 0.5s alternate ease-in-out;
 
         @media (min-width: 415px) {
-          animation: y-axis-2 6s infinite 0.5s alternate ease-in-out;
+          animation: y-axis-2 4s infinite 0.5s alternate ease-in-out;
         }
 
         @media (min-width: 769px) {
-          animation: y-axis-3 8s infinite 0.5s alternate ease-in-out;
+          animation: y-axis-3 4s infinite 0.5s alternate ease-in-out;
         }
       }
     }
 
     &:nth-child(3) {
-      transform: translate(-$phoneradius * 0.5, $phoneradius * 0.1);
-      animation: x-axis-lateral-1 4s infinite alternate ease;
+      transform: translate($phoneradius * 0.5, $phoneradius * 0.1);
+      animation: x-axis-1 4s infinite alternate ease;
 
       @media (min-width: 415px) {
         transform: translate(-$tabletradius * 0.8, $tabletradius * 0.8);
-        animation: x-axis-lateral-2 6s infinite alternate ease;
+        animation: x-axis-lateral-2 4s infinite alternate ease;
       }
 
       @media (min-width: 769px) {
         transform: translate(-$desktopradius * 1.5, $desktopradius * 0.3);
-        animation: x-axis-lateral-3 8s infinite alternate ease;
+        animation: x-axis-lateral-3 4s infinite alternate ease;
       }
 
       &:before {
         animation: y-axis-lateral-1 4s infinite 0.5s alternate ease-in-out;
 
         @media (min-width: 415px) {
-          animation: y-axis-lateral-2 6s infinite 0.5s alternate ease-in-out;
+          animation: y-axis-lateral-2 4s infinite 0.5s alternate ease-in-out;
         }
 
         @media (min-width: 769px) {
-          animation: y-axis-lateral-3 8s infinite 0.5s alternate ease-in-out;
+          animation: y-axis-lateral-3 4s infinite 0.5s alternate ease-in-out;
         }
       }
     }
@@ -133,7 +127,7 @@ $desktopradius: 600px;
 
   @keyframes x-axis-1 {
     0% {
-      transform: translate(-$phoneradius * 0.8);
+      transform: translate(-$phoneradius * 0.2);
     }
     100% {
       transform: translate($phoneradius * 0.2);
@@ -142,38 +136,38 @@ $desktopradius: 600px;
 
   @keyframes x-axis-2 {
     0% {
-      transform: translate(-$tabletradius * 0.4);
+      transform: translate(-$tabletradius * 0.3);
     }
     100% {
-      transform: translate($tabletradius * 0.4);
+      transform: translate($tabletradius * 0.3);
     }
   }
 
   @keyframes x-axis-3 {
     0% {
-      transform: translate(-$desktopradius * 0.2);
+      transform: translate(-$desktopradius * 0.4);
     }
     100% {
-      transform: translate($desktopradius * 0.8);
+      transform: translate($desktopradius * 0.4);
     }
   }
 
   @keyframes y-axis-1 {
     0% {
-      transform: translateY($phoneradius * 0.2);
+      transform: translateY($phoneradius * 0.1);
     }
     100% {
-      transform: translateY(-$phoneradius * 0.8) scale(0.8);
+      transform: translateY(-$phoneradius * 0.1) scale(1);
       background: #87d4cd;
     }
   }
 
   @keyframes y-axis-2 {
     0% {
-      transform: translateY($tabletradius * 0.2);
+      transform: translateY($tabletradius * 0.3);
     }
     100% {
-      transform: translateY(-$tabletradius * 0.4) scale(1);
+      transform: translateY(-$tabletradius * 0.1) scale(1);
       background: #87d4cd;
     }
   }

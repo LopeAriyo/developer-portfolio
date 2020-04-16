@@ -1,7 +1,8 @@
 import React from "react"
+import BlobButton from "../secondary/BlobButton"
 
 const ProjectsBanner = props => (
-  <div className="projects-banner">
+  <div id="projects-banner" className="banner">
     {/* <div id="small-squiggle"></div>
     <div id="small-squiggle"></div>
     <div id="large-squiggle"></div> */}
@@ -9,7 +10,7 @@ const ProjectsBanner = props => (
       <div className="blob">
         <div className="ball"></div>
         <div className="ball"></div>
-        <div className="ball"></div>
+        {/* <div className="ball"></div> */}
       </div>
 
       <svg>
@@ -39,9 +40,7 @@ const ProjectsBanner = props => (
         building both web apps which can be optimized to become PWAs.
         Technologies I use include Vanilla JS, React, Next.js and Gatsby.
       </p>
-      <a href="#/">
-        <button className="primary-button">View Projects</button>
-      </a>
+      <BlobButton slug="projects" callToAction="View Projects" />
     </div>
   </div>
 )
