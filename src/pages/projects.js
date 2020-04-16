@@ -1,5 +1,21 @@
 import React from "react"
 
-const ProjectsPage = () => <p>Welcome to page 2</p>
+import { Helmet } from "react-helmet"
+import Layout from "../components/primary/Layout"
+import ProjectsIndex from "../components/banners/ProjectsIndex"
+
+const ProjectsPage = () => (
+  <div className="application">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Lopè Ariyo - Fullstack Developer</title>
+      {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+    </Helmet>
+
+    <Layout>
+      <ProjectsIndex />
+    </Layout>
+  </div>
+)
 
 export default ProjectsPage
