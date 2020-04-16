@@ -28,18 +28,18 @@ const sideNavbar = props => {
       </div>
       <div>
         <ul className="side-nav-links">
-          <li className="side-nav-link">
+          {/* <li className="side-nav-link">
             <Link to="/#">About</Link>
-          </li>
+          </li> */}
           <li className="side-nav-link">
-            <Link to="/#">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
-          <li className="side-nav-link">
+          {/* <li className="side-nav-link">
             <Link to="/#">Blog</Link>
-          </li>
-          <li className="side-nav-link">
+          </li> */}
+          {/* <li className="side-nav-link">
             <Link to="/#">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="spacer"></div>
