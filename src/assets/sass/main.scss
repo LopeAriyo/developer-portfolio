@@ -1,6 +1,7 @@
 //Fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 // Layout.
 @import "layout/header";
 @import "layout/navbar";
@@ -18,6 +19,8 @@
 @import "components/blob";
 @import "components/projectcarousel";
 @import "components/projectcard";
+//Swiper Component
+@import "../../../node_modules/swiper/css/swiper.css";
 
 //Icons
 @import "components/menuicon";

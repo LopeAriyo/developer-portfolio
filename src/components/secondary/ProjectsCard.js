@@ -1,5 +1,5 @@
 import React from "react"
-import BlobButton from "./BlobButton"
+// import BlobButton from "./BlobButton"
 import Image from "gatsby-image"
 
 const ProjectCard = ({
@@ -46,7 +46,7 @@ const ProjectCard = ({
           </a>
         )}
       </div>
-      <BlobButton />
+      {/* <BlobButton /> */}
     </div>
   )
 }

@@ -36,10 +36,34 @@
   .device-images {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+    margin: 15px 0;
+
     .phone-image {
       margin: 5px;
-      width: 150px;
+      width: 50%;
+      @media (min-width: 415px) {
+        display: none;
+      }
+    }
+    .tablet-image {
+      margin: 5px;
+      width: 60%;
+      display: none;
+
+      @media (min-width: 415px) and (max-width: 768px) {
+        display: inline;
+      }
+    }
+    .desktop-image {
+      margin: 5px;
+      width: 50%;
+      display: none;
+
+      @media (min-width: 769px) {
+        display: inline;
+      }
     }
   }
 
@@ -49,7 +73,7 @@
     justify-content: space-evenly;
     a {
       text-decoration: none;
-      color: #f0716c;
+      color: #f69692;
     }
   }
 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import GithubIcon from "../../assets/icons/social-media/github.svg"
 import LinkedInIcon from "../../assets/icons/social-media/linkedin.svg"
 import MediumIcon from "../../assets/icons/social-media/medium.svg"

@@ -42,8 +42,6 @@ module.exports = {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`project`],
-        //If using single types place them in this array.
-        // Possibility to login with a strapi user, when content types are not publically available (optional).
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
