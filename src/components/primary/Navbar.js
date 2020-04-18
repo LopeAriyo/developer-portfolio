@@ -24,18 +24,18 @@ const navbar = props => {
 
       <div>
         <ul className="nav-links">
-          <li className="nav-link">
+          {/* <li className="nav-link">
             <Link to="/#about">About </Link>
-          </li>
+          </li> */}
           <li className="nav-link">
-            <Link to="/#projects">Projects </Link>
+            <Link to="/projects">Projects </Link>
           </li>
-          <li className="nav-link">
+          {/* <li className="nav-link">
             <Link to="/#blog">Blog</Link>
-          </li>
-          <li className="nav-link">
+          </li> */}
+          {/* <li className="nav-link">
             <Link to="/#contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
