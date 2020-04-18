@@ -1,48 +1,11 @@
 .carousel {
-  position: absolute;
-  top: 15%;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // top: 15%;
   width: inherit;
   padding: 0px 1.2rem;
   color: rgb(3, 14, 39);
   text-align: center;
   z-index: 3;
-
-  .project-title {
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 3rem;
-    letter-spacing: 2px;
-    font-family: "Abril Fatface", cursive;
-
-    text-align: center;
-    @media (min-width: 415px) {
-      font-size: 2.7rem;
-      line-height: 4rem;
-    }
-    @media (min-width: 769px) {
-      font-size: 3.6rem;
-      line-height: 5rem;
-    }
-  }
-
-  .project-description {
-    font-size: 0.9rem;
-    padding: 10px 0;
-    text-align: center;
-    line-height: 1rem;
-
-    @media (min-width: 415px) {
-      font-size: 1.2rem;
-      line-height: 1.7rem;
-    }
-  }
-
-  @media (min-width: 415px) {
-    padding: 0px 3rem;
-  }
-
-  @media (min-width: 769px) {
-    padding: 0px 6rem;
-  }
 }
