@@ -21,15 +21,11 @@ const ProjectCard = ({
       <p className="project-title">{title}</p>
       <p className="project-description">{description}</p>
       <div className="device-images">
-        <div className="phone-image">
-          <img src={phoneImg} />
-        </div>
+        <div className="phone-image">{/* <img src={phoneImg} /> */}</div>
         <div className="tablet-image">
-          <img src={tabletImg} alt={title} />
+          {/* <img src={tabletImg} alt={title} /> */}
         </div>
-        <div className="desktop-image">
-          <img src={desktopImg} />
-        </div>
+        <div className="desktop-image">{/* <img src={desktopImg} /> */}</div>
       </div>
 
       <div className="project-socials">
