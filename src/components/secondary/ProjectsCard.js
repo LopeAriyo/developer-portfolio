@@ -23,15 +23,12 @@ const ProjectCard = ({
       <div className="device-images">
         <div className="phone-image">
           <img src={phoneImg} />
-          {/* <Image fluid={phoneImg} alt={title} /> */}
         </div>
         <div className="tablet-image">
-          <img src={tabletImg} />
-          <Image fluid={tabletImg} alt={title} />
+          <img src={tabletImg} alt={title} />
         </div>
         <div className="desktop-image">
           <img src={desktopImg} />
-          {/* <Image fluid={desktopImg} alt={title} /> */}
         </div>
       </div>
 
