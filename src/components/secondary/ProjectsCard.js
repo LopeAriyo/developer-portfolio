@@ -8,13 +8,13 @@ const ProjectCard = ({
   phoneImage,
   tabletImage,
   desktopImage,
-  websiteLink,
   demoLink,
+  websiteLink,
   githubLink,
 }) => {
-  const imageOne = phoneImage.childImageSharp.fluid
-  const imageTwo = tabletImage.childImageSharp.fluid
-  const imageThree = desktopImage.childImageSharp.fluid
+  const phoneImg = phoneImage.url
+  const tabletImg = tabletImage.url
+  const desktopImg = desktopImage.url
 
   return (
     <div className="project-card">
@@ -22,13 +22,16 @@ const ProjectCard = ({
       <p className="project-description">{description}</p>
       <div className="device-images">
         <div className="phone-image">
-          <Image fluid={imageOne} alt={title} />
+          <img src={phoneImg} />
+          {/* <Image fluid={phoneImg} alt={title} /> */}
         </div>
         <div className="tablet-image">
-          <Image fluid={imageTwo} alt={title} />
+          <img src={tabletImg} />
+          <Image fluid={tabletImg} alt={title} />
         </div>
         <div className="desktop-image">
-          <Image fluid={imageThree} alt={title} />
+          <img src={desktopImg} />
+          {/* <Image fluid={desktopImg} alt={title} /> */}
         </div>
       </div>
 

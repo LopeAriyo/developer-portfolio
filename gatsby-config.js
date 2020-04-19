@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -39,11 +40,26 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://lopeariyo-portfolio-be.herokuapp.com`,
+        // apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`project`],
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1080,
+            },
+          },
+        ],
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
