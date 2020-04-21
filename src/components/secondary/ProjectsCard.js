@@ -1,31 +1,29 @@
 import React from "react"
 // import BlobButton from "./BlobButton"
-import Image from "gatsby-image"
+import PhoneImages from "./PhoneImages"
+import TabletImages from "./TabletImages"
+import DesktopImages from "./DesktopImages"
 
 const ProjectCard = ({
   title,
   description,
-  phoneImage,
-  tabletImage,
-  desktopImage,
   demoLink,
   websiteLink,
   githubLink,
 }) => {
-  const phoneImg = phoneImage.url
-  const tabletImg = tabletImage.url
-  const desktopImg = desktopImage.url
+  // const phoneImg = phoneImage.childImageSharp.fluid
+  // const tabletImg = tabletImage.childImageSharp.fluid
+  // const desktopPath = "projects/developer-desktop.png"
 
   return (
     <div className="project-card">
       <p className="project-title">{title}</p>
       <p className="project-description">{description}</p>
       <div className="device-images">
-        <div className="phone-image">{/* <img src={phoneImg} /> */}</div>
-        <div className="tablet-image">
-          {/* <img src={tabletImg} alt={title} /> */}
-        </div>
-        <div className="desktop-image">{/* <img src={desktopImg} /> */}</div>
+        <PhoneImages display={title} />
+        <TabletImages display={title} />
+
+        <DesktopImages display={title} />
       </div>
 
       <div className="project-socials">

@@ -24,8 +24,8 @@ class ProjectSwiper extends Component {
         <div className="swiper-wrapper">
           {this.props.projects.map(project => {
             return (
-              <div className="swiper-slide">
-                <ProjectCard key={project.id} {...project} />
+              <div className="swiper-slide" key={project.id}>
+                <ProjectCard {...project} />
               </div>
             )
           })}

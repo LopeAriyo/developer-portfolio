@@ -13,8 +13,8 @@ const ProjectsBanner = props => (
       <p className="title">Projects</p>
       <p className="info">
         I have a passion for mobile first and responsive design. I enjoy
-        building both web apps which can be optimized to become PWAs.
-        Technologies I use include Vanilla JS, React, Next.js and Gatsby.
+        building web apps which can be optimized to become PWAs. Technologies I
+        use include Ruby on Rails, Vanilla JS, React.js, and Gatsby.
       </p>
       <BlobButton slug="projects" callToAction="View Projects" />
     </div>

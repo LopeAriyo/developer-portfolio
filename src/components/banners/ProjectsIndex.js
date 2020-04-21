@@ -5,23 +5,22 @@ import ProjectSwiper from "../secondary/ProjectSwiper"
 
 import Blob from "../secondary/Blob"
 
-// const query = graphql`
-//   {
-//     allStrapiProject(sort: { fields: publishDate, order: DESC }) {
-//       nodes {
-//         tabletImage {
-//            childImageSharp {
-//              fluid {
-//                  ...GatsbyImageSharpFluid_withWebp
-//              }
-//            }
-//        }
-//       }
+// tabletImage {
+//   childImageSharp {
+//     fluid {
+//       ...GatsbyImageSharpFluid_withWebp
 //     }
 //   }
-// `
+// }
+// desktopImage {
+//   childImageSharp {
+//     fluid {
+//       ...GatsbyImageSharpFluid_withWebp
+//     }
+//   }
+// }
 
-const query = graphql`
+const projectQuery = graphql`
   {
     allStrapiProject(sort: { fields: publishDate, order: DESC }) {
       nodes {
@@ -31,15 +30,6 @@ const query = graphql`
         githubLink
         websiteLink
         demoLink
-        phoneImage {
-          url
-        }
-        tabletImage {
-          url
-        }
-        desktopImage {
-          url
-        }
       }
     }
   }
@@ -48,7 +38,7 @@ const query = graphql`
 const ProjectsIndex = () => {
   const {
     allStrapiProject: { nodes: projects },
-  } = useStaticQuery(query)
+  } = useStaticQuery(projectQuery)
 
   return (
     <div id="projects-index" className="banner">

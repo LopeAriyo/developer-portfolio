@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Lope Ariyo`,
+    title: `Lope Ariyo Developer Portfolio`,
     description: `A developer portfolio website from Lope Ariyo.`,
-    author: `@lopeariyo`,
+    author: `Lope Ariyo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,10 +10,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-remark-copy-linked-files`,
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `https://lopeariyo-portfolio-be.herokuapp.com`,
+        // apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        contentTypes: [`project`],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -28,6 +36,7 @@ module.exports = {
         icon: `src/images/lope-icon.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-offline",
     `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -37,15 +46,8 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `https://lopeariyo-portfolio-be.herokuapp.com`,
-        // apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`project`],
-      },
-    },
+    `gatsby-remark-copy-linked-files`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -59,9 +61,5 @@ module.exports = {
         ],
       },
     },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
