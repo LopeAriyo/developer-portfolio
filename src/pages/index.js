@@ -17,7 +17,7 @@ const IndexPage = props => {
         <Landing />
         {/* <div id="wrapper"> */}
         {/* <AboutBanner /> */}
-        <ProjectsBanner />
+        {/* <ProjectsBanner /> */}
         {/* <BlogBanner/> */}
         {/* <Contact /> */}
         {/* </div>*/}
