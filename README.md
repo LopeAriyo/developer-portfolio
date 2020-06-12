@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.twitter.com/LopeAriyoDev">
+  <a href="https://www.lopeariyo.dev/ ">
     <img alt="Lope Logo" src="https://pbs.twimg.com/profile_images/1248697046883762176/A80erP3V_400x400.png" width="120" />
   </a>
 </p>
@@ -8,7 +8,7 @@
   My Developer Portfolio
 </h1>
 
-## Quick start
+## Website
 
 Visit https://www.lopeariyo.dev/ for full portfolio website
 
