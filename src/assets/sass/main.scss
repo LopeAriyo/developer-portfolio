@@ -12,6 +12,7 @@
 @import "banners/landing";
 @import "banners/projectsbanner";
 @import "banners/projectsindex";
+@import "banners/blogindex";
 
 //Components
 @import "components/socialmediabar";
@@ -19,6 +20,8 @@
 @import "components/blob";
 @import "components/projectcarousel";
 @import "components/projectcard";
+@import "components/blogfeed";
+@import "components/postcard";
 //Swiper Component
 @import "../../../node_modules/swiper/css/swiper.css";
 
