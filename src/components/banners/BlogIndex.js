@@ -5,14 +5,21 @@ import BlogCard from "../secondary/BlogCard"
 
 const blogQuery = graphql`
   {
-    allDevNode(sort: { fields: id, order: DESC }) {
+    allDevNode {
       nodes {
         id
         frontmatter {
           cover
           title
-          description
           publish_date
+          description
+        }
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
         preview
       }
@@ -26,13 +33,11 @@ const BlogIndex = () => {
 
   return (
     <div id="blog-index" className="banner">
-      {blog.map(post => {
-        return (
-          <div key={post.id}>
-            <BlogCard {...post} />
-          </div>
-        )
-      })}
+      <section className="blog-feed">
+        {blog.map(post => {
+          return <BlogCard key={post.id} post={post} />
+        })}
+      </section>
     </div>
   )
 }
