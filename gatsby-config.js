@@ -22,6 +22,12 @@ module.exports = {
         contentTypes: [`project`],
       },
     },
+    {
+      resolve: `gatsby-source-devto`,
+      options: {
+        username: `lopeariyo`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
