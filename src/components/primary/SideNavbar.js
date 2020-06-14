@@ -34,9 +34,9 @@ const sideNavbar = props => {
           <li className="side-nav-link">
             <Link to="/projects">Projects</Link>
           </li>
-          {/* <li className="side-nav-link">
-            <Link to="/#">Blog</Link>
-          </li> */}
+          <li className="side-nav-link">
+            <Link to="/blog">Blog</Link>
+          </li>
           {/* <li className="side-nav-link">
             <Link to="/#">Contact</Link>
           </li> */}
