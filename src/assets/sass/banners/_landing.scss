@@ -158,6 +158,9 @@ $shadows-extra-large: multiple-box-shadow(50);
       letter-spacing: 5px;
       font-weight: 300;
       font-family: "Abril Fatface", cursive;
+      @media (max-width: 375px) {
+        font-size: 1.2rem;
+      }
       @media (min-width: 415px) {
         font-size: 1.8rem;
       }
@@ -167,6 +170,10 @@ $shadows-extra-large: multiple-box-shadow(50);
       font-weight: 900;
       letter-spacing: 5px;
       font-family: "Abril Fatface", cursive;
+
+      @media (max-width: 375px) {
+        font-size: 2.4rem;
+      }
       @media (min-width: 415px) {
         font-size: 5.4rem;
       }
@@ -179,6 +186,9 @@ $shadows-extra-large: multiple-box-shadow(50);
       font-size: 1.8rem;
       font-weight: 600;
       font-family: "Abril Fatface", cursive;
+      @media (max-width: 375px) {
+        font-size: 1.6rem;
+      }
       @media (min-width: 415px) {
         font-size: 2.7rem;
       }
