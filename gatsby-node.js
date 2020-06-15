@@ -10,7 +10,10 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
-        coverUrl: String
+        cover: String
+        title: String
+        publish_date: String
+        description: String
       }
   `)
 }

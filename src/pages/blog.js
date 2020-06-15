@@ -11,7 +11,6 @@ const BlogPage = () => (
       <title>Lopè's Tech Blog Ariyo </title>
       {/* <link rel="canonical" href="http://mysite.com/example" /> */}
     </Helmet>
-
     <Layout>
       <BlogIndex />
     </Layout>
