@@ -23,9 +23,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-devto`,
+      resolve: `gatsby-source-dev`,
       options: {
-        username: `lopeariyo`,
+        username: "lopeariyo",
       },
     },
     `gatsby-transformer-sharp`,
