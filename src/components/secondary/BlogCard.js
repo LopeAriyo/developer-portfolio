@@ -4,9 +4,12 @@ import Img from "gatsby-image"
 
 const ProjectCard = ({ post }) => {
   //   const readingTime = readingTimeHelper(post)
+
+  const { title, description, tags, readable_publish_date, url } = post.article
+
   return (
     <div className="post-card">
-      <h2 className="post-title">{post.frontmatter.title}</h2>
+      <h2 className="post-title">{title}</h2>
       {post.cover && (
         <Img
           className="cover-image"
@@ -15,10 +18,10 @@ const ProjectCard = ({ post }) => {
         />
       )}
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <div className="post-excerpt">{post.frontmatter.description}</div>
-      <div className="post-publish-date">{post.frontmatter.publish_date}</div>
+      <div className="post-excerpt">{description}</div>
+      <div className="post-publish-date">{readable_publish_date}</div>
       {/* <div className="post-read-time">I'm the reading time</div> */}
-      <a href={post.preview} target="_blank" rel="noopener noreferrer">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <button>Read More</button>
       </a>
     </div>

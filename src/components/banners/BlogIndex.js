@@ -5,14 +5,15 @@ import BlogCard from "../secondary/BlogCard"
 
 const blogQuery = graphql`
   {
-    allDevNode {
+    allDevArticles {
       nodes {
         id
-        frontmatter {
-          cover
+        article {
+          tags
           title
-          publish_date
           description
+          readable_publish_date
+          url
         }
         cover {
           childImageSharp {
@@ -21,14 +22,13 @@ const blogQuery = graphql`
             }
           }
         }
-        preview
       }
     }
   }
 `
 const BlogIndex = () => {
   const {
-    allDevNode: { nodes: blog },
+    allDevArticles: { nodes: blog },
   } = useStaticQuery(blogQuery)
 
   return (
