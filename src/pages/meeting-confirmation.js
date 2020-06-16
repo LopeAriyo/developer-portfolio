@@ -4,12 +4,12 @@ import Layout from "../components/primary/Layout"
 import { Link } from "gatsby"
 import Blob from "../components/secondary/Blob"
 
-const ThankYouPage = () => {
+const MeetingConfirmationPage = () => {
   return (
     <div className="application">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Thank You! </title>
+        <title>Meeting Confirmed! </title>
         {/* <link rel="canonical" href="http://mysite.com/example" /> */}
       </Helmet>
       <Layout>
@@ -17,8 +17,8 @@ const ThankYouPage = () => {
           <Blob />
           <div className="error-container">
             <h1>Nice...</h1>
-            <h4> I've got your email! </h4>
-            <p>I'll be in touch shortly.</p>
+            <h4> Our meeting is set!</h4>
+            <p>I'm looking forward to our conversation.</p>
             <Link to="/">
               <button>Back Home</button>
             </Link>
@@ -29,4 +29,4 @@ const ThankYouPage = () => {
   )
 }
 
-export default ThankYouPage
+export default MeetingConfirmationPage
