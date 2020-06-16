@@ -29,9 +29,9 @@ const navbar = props => {
           <li className="nav-link">
             <Link to="/blog">Blog</Link>
           </li>
-          {/* <li className="nav-link">
-            <Link to="/#contact">Contact</Link>
-          </li> */}
+          <li className="nav-link">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
 

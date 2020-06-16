@@ -37,9 +37,9 @@ const sideNavbar = props => {
           <li className="side-nav-link">
             <Link to="/blog">Blog</Link>
           </li>
-          {/* <li className="side-nav-link">
-            <Link to="/#">Contact</Link>
-          </li> */}
+          <li className="side-nav-link">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
       <div className="spacer"></div>
