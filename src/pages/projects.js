@@ -8,7 +8,7 @@ const ProjectsPage = () => (
   <div className="application">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Lopè Ariyo - Fullstack Developer</title>
+      <title>Lopè's Tech Projects</title>
       {/* <link rel="canonical" href="http://mysite.com/example" /> */}
     </Helmet>
 
