@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import LopeIcon from "../../assets/images/lope-icon-1.svg"
+import LopeIcon from "../../assets/images/primary-lope-icon.svg"
 
 const navbar = props => {
   return (
@@ -8,11 +8,7 @@ const navbar = props => {
       <div className="logo">
         <div className="logo-img">
           <Link to="/#">
-            <LopeIcon
-              height={"60px"}
-              width={"70px"}
-              fill={"rgb(236, 82, 129)"}
-            />
+            <LopeIcon height={"60px"} width={"70px"} fill={"rgb(3, 14, 39)"} />
           </Link>
         </div>
         <div className="logo-text">
