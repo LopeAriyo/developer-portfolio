@@ -3,6 +3,7 @@ import GithubIcon from "../../assets/icons/social-media/github.svg"
 import LinkedInIcon from "../../assets/icons/social-media/linkedin.svg"
 import MediumIcon from "../../assets/icons/social-media/medium.svg"
 import TwitterIcon from "../../assets/icons/social-media/twitter.svg"
+import DevToIcon from "../../assets/icons/social-media/devto.svg"
 
 const BannerImage = props => (
   <div className="social-media-bar">
@@ -30,12 +31,12 @@ const BannerImage = props => (
       </li>
       <li className="social-media-icon">
         <a
-          href="https://medium.com/@lope.ariyo"
+          href="https://dev.to/lopeariyo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MediumIcon height={"60px"} width={"60px"} />
-          <p>Medium</p>
+          <DevToIcon height={"60px"} width={"60px"} />
+          <p>Dev</p>
         </a>
       </li>
       <li className="social-media-icon">
