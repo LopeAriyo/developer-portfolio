@@ -8,12 +8,12 @@
   align-self: center;
   justify-content: space-between;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  @media (max-width: 980px) {
+  @media (min-width: 767px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (max-width: 680px) {
-    grid-template-columns: 1fr;
+  @media (min-width: 1023px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
