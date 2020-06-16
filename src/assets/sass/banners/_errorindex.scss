@@ -1,0 +1,29 @@
+.error-page {
+  background: #f0716c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .error-container {
+    position: absolute;
+    top: 30%;
+    width: 80vw;
+    padding: 0px 1.2rem;
+    text-align: center;
+    z-index: 3;
+
+    h1 {
+      font-size: 3.6rem;
+      @media (min-width: 767px) {
+        font-size: 7.2rem;
+      }
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      @media (min-width: 767px) {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
