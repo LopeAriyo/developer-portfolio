@@ -14,34 +14,31 @@ const NotFoundPage = () => {
           <br />
           <article className="contact-form">
             <h4>Want to send a message</h4>
-            <form action="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true">
               <div className="form-group">
                 <input
                   className="form-control"
                   type="text"
                   name="name"
-                  id="name"
                   placeholder="Name"
                 ></input>
                 <input
                   className="form-control"
                   type="email"
                   name="email"
-                  id="email"
                   placeholder="Email"
                 ></input>
                 <textarea
                   className="form-control"
                   name="message "
-                  id="message"
                   placeholder="Message"
                   rows="8"
                 ></textarea>
                 <div class="field">
                   <div data-netlify-recaptcha="true"></div>
                 </div>
+                <button type="submit">Email Me</button>
               </div>
-              <button type="submit">Email Me</button>
             </form>
           </article>
           <h4>Want to meet instead?</h4>
