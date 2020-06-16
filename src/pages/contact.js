@@ -55,9 +55,13 @@ const NotFoundPage = () => {
               <button type="submit">Email Me</button>
             </form>
             <h4>Want to meet instead?</h4>
-            <Link to="/">
+            <a
+              href="https://calendly.com/lope-ariyo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>Meet Me</button>
-            </Link>
+            </a>
             <h4>Other ways to connect</h4>
             <SocialMediaBar />
             <p>I can't wait to hear from you</p>
