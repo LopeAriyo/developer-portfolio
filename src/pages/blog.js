@@ -8,7 +8,7 @@ const BlogPage = () => (
   <div className="application">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Lopè's Tech Blog Ariyo </title>
+      <title>Lopè's Tech Blog </title>
       {/* <link rel="canonical" href="http://mysite.com/example" /> */}
     </Helmet>
     <Layout>

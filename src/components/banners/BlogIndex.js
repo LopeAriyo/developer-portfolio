@@ -33,6 +33,7 @@ const BlogIndex = () => {
 
   return (
     <div id="blog-index" className="banner">
+      <h1 className="page-title">Blog</h1>
       <section className="blog-feed">
         {blog.map(post => {
           return <BlogCard key={post.id} post={post} />

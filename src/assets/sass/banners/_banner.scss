@@ -6,4 +6,23 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+
+  section {
+    position: absolute;
+    top: 25%;
+  }
+
+  .page-title {
+    position: absolute;
+    top: 13%;
+    width: 95vw;
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-family: "Abril Fatface", cursive;
+    color: #030e27;
+  }
 }

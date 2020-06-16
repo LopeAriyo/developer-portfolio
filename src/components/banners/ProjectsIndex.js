@@ -43,9 +43,10 @@ const ProjectsIndex = () => {
   return (
     <div id="projects-index" className="banner">
       <Blob />
-      <div className="carousel">
+      <h1 className="page-title">Projects</h1>
+      <section className="carousel">
         <ProjectSwiper projects={projects} />
-      </div>
+      </section>
     </div>
   )
 }
