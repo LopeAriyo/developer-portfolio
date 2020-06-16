@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import SocialMediaBar from "../secondary/SocialMediaBar"
 
 const Landing = props => (
@@ -18,6 +19,10 @@ const Landing = props => (
 
       <br />
       <p> Welcome to my portfolio! </p>
+
+      <Link to="/projects">
+        <button>View Projects</button>
+      </Link>
     </div>
   </div>
 )
