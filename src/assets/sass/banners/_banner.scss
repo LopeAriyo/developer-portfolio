@@ -24,5 +24,15 @@
     letter-spacing: 2px;
     font-family: "Abril Fatface", cursive;
     color: #030e27;
+
+    @media (min-width: 767px) {
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+
+    @media (min-width: 1023px) {
+      font-size: 4.8rem;
+      line-height: 5rem;
+    }
   }
 }
