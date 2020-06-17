@@ -25,7 +25,9 @@
   .project-avatar {
     background-color: #41aea2;
     min-height: 125px;
-    width: 125px;
+    max-height: 125px;
+    min-width: 125px;
+    max-width: 125px;
     border-radius: 50%;
     align-self: center;
     margin: 10px;
@@ -41,15 +43,7 @@
     color: #f0716c;
     @media (min-width: 415px) {
       font-size: 2.7rem;
-      line-height: 4rem;
-    }
-    @media (min-width: 767px) {
-      font-size: 3.6rem;
-      line-height: 5rem;
-    }
-    @media (min-width: 1023px) {
-      font-size: 3.4rem;
-      line-height: 5rem;
+      line-height: 3rem;
     }
   }
 
@@ -142,6 +136,7 @@
     margin: 10px;
 
     .external-project-links {
+      list-style: none;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
