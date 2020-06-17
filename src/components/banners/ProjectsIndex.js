@@ -1,24 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
-import ProjectSwiper from "../secondary/ProjectSwiper"
-
-import Blob from "../secondary/Blob"
-
-// tabletImage {
-//   childImageSharp {
-//     fluid {
-//       ...GatsbyImageSharpFluid_withWebp
-//     }
-//   }
-// }
-// desktopImage {
-//   childImageSharp {
-//     fluid {
-//       ...GatsbyImageSharpFluid_withWebp
-//     }
-//   }
-// }
+import ProjectCard from "../../components/secondary/ProjectCard"
 
 const projectQuery = graphql`
   {
@@ -42,10 +24,19 @@ const ProjectsIndex = () => {
 
   return (
     <div id="projects-index" className="banner">
-      <Blob />
       <h1 className="page-title">Projects</h1>
-      <section className="carousel">
-        <ProjectSwiper projects={projects} />
+
+      <section className="project-portfolio">
+        {/* {project.map(post => {
+          return <ProjectCard key={post.id} post={post} />
+        })} */}
+
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </section>
     </div>
   )
