@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Swiper from "swiper"
 
-import ProjectCard from "../secondary/ProjectsCard"
+import ProjectCard from "./FeaturedProjectCard"
 
 class ProjectSwiper extends Component {
   componentDidMount() {
