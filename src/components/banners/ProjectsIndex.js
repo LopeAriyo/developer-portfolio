@@ -2,16 +2,29 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "../../components/secondary/ProjectCard"
 
+// allStrapiProject(sort: { fields: publishDate, order: DESC }) {
+
 const projectQuery = graphql`
   {
-    allStrapiProject(sort: { fields: publishDate, order: DESC }) {
+    allStrapiProject {
       nodes {
         id
+        avatar {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        category
         title
         description
-        githubLink
-        websiteLink
-        demoLink
+        technologies {
+          item
+        }
+        github_link
+        app_link
+        platform
       }
     }
   }
@@ -27,16 +40,9 @@ const ProjectsIndex = () => {
       <h1 className="page-title">Projects</h1>
 
       <section className="project-portfolio">
-        {/* {project.map(post => {
-          return <ProjectCard key={post.id} post={post} />
-        })} */}
-
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map(project => {
+          return <ProjectCard key={project.id} {...project} />
+        })}
       </section>
     </div>
   )

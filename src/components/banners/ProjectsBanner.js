@@ -5,25 +5,25 @@ import ProjectSwiper from "../secondary/ProjectSwiper"
 import Blob from "../secondary/Blob"
 import BlobButton from "../secondary/BlobButton"
 
-const projectQuery = graphql`
-  {
-    allStrapiProject(sort: { fields: publishDate, order: DESC }) {
-      nodes {
-        id
-        title
-        description
-        githubLink
-        websiteLink
-        demoLink
-      }
-    }
-  }
-`
+// const projectQuery = graphql`
+//   {
+//     allStrapiProject(sort: { fields: publishDate, order: DESC }) {
+//       nodes {
+//         id
+//         title
+//         description
+//         githubLink
+//         websiteLink
+//         demoLink
+//       }
+//     }
+//   }
+// `
 
 const ProjectsBanner = props => {
-  const {
-    allStrapiProject: { nodes: projects },
-  } = useStaticQuery(projectQuery)
+  // const {
+  //   allStrapiProject: { nodes: projects },
+  // } = useStaticQuery(projectQuery)
 
   return (
     <div id="projects-banner" className="banner">
@@ -41,7 +41,7 @@ const ProjectsBanner = props => {
         </p>
         <h4>Featured</h4>
         <section className="carousel">
-          <ProjectSwiper projects={projects} />
+          {/* <ProjectSwiper projects={projects} /> */}
         </section>
         <BlobButton slug="projects" callToAction="View Projects" />
       </div>
