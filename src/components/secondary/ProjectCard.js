@@ -1,40 +1,44 @@
 import React from "react"
+import Img from "gatsby-image"
+import ProjectLinks from "../secondary/ProjectLinks"
 
 const ProjectCard = ({
+  avatar,
   category,
   title,
   description,
   technologies,
   app_link,
   github_link,
+  platform,
 }) => {
-  const testTech = ["React", "Node", "Netlify", "Heroku"]
-
   return (
-    <div className="project-card">
-      <div className="project-avatar"></div>
-      <p className="project-category">Web App</p>
-      <p className="project-title">Yemoja</p>
-      <p className="project-description">A period tracking app</p>
+    <article className="project-card">
+      <p className="project-platform">{platform} Development</p>
+      <div className="project-avatar">
+        {" "}
+        <Img
+          className="cover-image"
+          fluid={avatar.childImageSharp.fluid}
+          // alt={data.markdownRemark.frontmatter.featuredImgAlt}
+        />
+      </div>
+
+      <p className="project-category">{category}</p>
+      <p className="project-title">{title}</p>
+      <p className="project-description">{description}</p>
       <div className="project-tech-list">
-        {testTech.map(tech => {
-          return <p className="project-tech">{tech}</p>
+        {technologies.map(tech => {
+          return <p className="project-tech">{tech.item}</p>
         })}
       </div>
       <div className="project-links">
-        <div className="external-project-links">
-          <a href={github_link} target="_blank" rel="noopener noreferrer">
-            <p>GH</p>
-          </a>
-          <a href={app_link} target="_blank" rel="noopener noreferrer">
-            <p>W</p>
-          </a>
-        </div>
-        <a href={app_link} target="_blank" rel="noopener noreferrer">
+        <ProjectLinks gitHub={github_link} app={app_link} />
+        {/* <a href={app_link} target="_blank" rel="noopener noreferrer">
           <button>Details</button>
-        </a>
+        </a> */}
       </div>
-    </div>
+    </article>
   )
 }
 export default ProjectCard
