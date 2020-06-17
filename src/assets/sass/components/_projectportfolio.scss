@@ -1,0 +1,19 @@
+.project-portfolio {
+  //   width: 95vw;
+  padding: 0px 1.2rem;
+  color: rgb(3, 14, 39);
+  text-align: center;
+  z-index: 3;
+  display: grid;
+  align-self: center;
+  justify-content: space-between;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1023px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
