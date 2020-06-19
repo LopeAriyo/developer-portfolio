@@ -16,10 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://lopeariyo-portfolio-be.herokuapp.com`,
+        apiURL: `https://la-portfolio-api.herokuapp.com`,
         // apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`project`],
+        // singleTypes: [`about`]
       },
     },
     {
