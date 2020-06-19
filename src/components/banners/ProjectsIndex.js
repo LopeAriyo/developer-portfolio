@@ -6,7 +6,7 @@ import ProjectCard from "../../components/secondary/ProjectCard"
 
 const projectQuery = graphql`
   {
-    allStrapiProject {
+    allStrapiProject(sort: { order: DESC, fields: createdAt }) {
       nodes {
         id
         avatar {
