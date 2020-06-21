@@ -5,7 +5,7 @@ import BlogCard from "../secondary/BlogCard"
 
 const blogQuery = graphql`
   {
-    allDevArticles {
+    allDevArticles(sort: { fields: article___published_at, order: DESC }) {
       nodes {
         id
         article {
