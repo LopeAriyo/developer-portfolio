@@ -1,7 +1,6 @@
 import React from "react"
 import GithubIcon from "../../assets/icons/social-media/github.svg"
 import LinkedInIcon from "../../assets/icons/social-media/linkedin.svg"
-import MediumIcon from "../../assets/icons/social-media/medium.svg"
 import TwitterIcon from "../../assets/icons/social-media/twitter.svg"
 import DevToIcon from "../../assets/icons/social-media/devto.svg"
 

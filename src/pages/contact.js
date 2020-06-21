@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/primary/Layout"
 import SocialMediaBar from "../components/secondary/SocialMediaBar"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 const NotFoundPage = () => {
   return (

@@ -10,6 +10,12 @@ const ProjectCard = ({ post }) => {
   return (
     <div className="post-card">
       <h2 className="post-title">{title}</h2>
+      <div className="tag-list">
+        {tags &&
+          tags.map(tag => {
+            return <p className="tag"> {tag}</p>
+          })}
+      </div>
       {post.cover && (
         <Img
           className="cover-image"

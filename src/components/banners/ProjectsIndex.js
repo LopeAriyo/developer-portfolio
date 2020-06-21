@@ -2,11 +2,9 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "../../components/secondary/ProjectCard"
 
-// allStrapiProject(sort: { fields: publishDate, order: DESC }) {
-
 const projectQuery = graphql`
   {
-    allStrapiProject(sort: { order: DESC, fields: createdAt }) {
+    allStrapiProject(sort: { fields: createdAt, order: DESC }) {
       nodes {
         id
         avatar {

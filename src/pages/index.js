@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/primary/Layout"
 import Landing from "../components/banners/Landing"
-import ProjectsBanner from "../components/banners/ProjectsBanner"
+// import ProjectsBanner from "../components/banners/ProjectsBanner"
 
 const IndexPage = props => {
   return (

@@ -18,6 +18,19 @@
     }
   }
 
+  .tag-list {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: center;
+    text-align: center;
+
+    .tag {
+      margin: 0px 10px;
+      color: #41aea2;
+    }
+  }
+
   .cover-image {
     margin: 10px 0 10px 0;
     width: auto;
