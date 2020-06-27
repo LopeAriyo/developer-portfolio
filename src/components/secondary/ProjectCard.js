@@ -17,11 +17,11 @@ const ProjectCard = ({
       <p className="project-platform">{platform} Development</p>
       <div className="project-avatar">
         {" "}
-        <Img
+        {/* <Img
           className="cover-image"
           fluid={avatar.childImageSharp.fluid}
           // alt={data.markdownRemark.frontmatter.featuredImgAlt}
-        />
+        /> */}
       </div>
 
       <p className="project-category">{category}</p>

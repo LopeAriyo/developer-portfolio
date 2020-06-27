@@ -2,18 +2,20 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectCard from "../../components/secondary/ProjectCard"
 
+// avatar {
+//   childImageSharp {
+//     fluid {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }
+
 const projectQuery = graphql`
   {
     allStrapiProject {
       nodes {
         id
-        avatar {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+
         category
         title
         description
