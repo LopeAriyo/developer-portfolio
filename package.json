@@ -22,7 +22,7 @@
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.4.6",
-    "gsap": "^3.2.6",
+    "gsap": "^3.6.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
