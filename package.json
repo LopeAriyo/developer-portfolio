@@ -20,7 +20,7 @@
     "gatsby-source-dev": "^0.1.4",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-strapi": "0.0.12",
-    "gatsby-transformer-remark": "^2.7.3",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.4.6",
     "gsap": "^3.2.6",
     "node-sass": "^4.13.1",
